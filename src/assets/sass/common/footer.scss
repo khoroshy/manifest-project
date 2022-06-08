@@ -24,7 +24,7 @@
             gap: 16px;
         }
     }
-    &__section:nth-last-child(1){
+    &__section:last-child{
         align-self: flex-end;
         @media (max-width: $tab){
             align-self: flex-start;
