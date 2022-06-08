@@ -1,5 +1,5 @@
 .footer
-{
+{   
     padding: 136px 0px 136px;
     background-color: $color-footer-bg;
     @media (max-width: $tab){
@@ -9,7 +9,7 @@
     {
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
+        align-items: center;
         @media (max-width: $tab){
             flex-direction: column;
             gap: 48px;
