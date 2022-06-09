@@ -1,0 +1,58 @@
+.home {
+
+    //hero section
+    .hero {
+        &__title {
+            max-width: 710px;
+            padding: 120px 0;
+
+            @media (max-width: $tab) {
+                max-width: 288px;
+                padding: 64px 0 40px;
+            }
+        }
+    }
+
+    //hero section end
+
+    //slider section
+    .slider {
+        margin: 0px 0px 55px;
+        &__container {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            overflow: scroll;
+            padding: $conteiner-size;
+
+            &::-webkit-scrollbar {
+                display: none;
+                justify-content: flex-start;
+            }
+
+            @media (max-width: $tab) {
+                gap: 16px;
+            }
+        }
+
+        &__item {
+            max-width: 544px;
+
+            @media (max-width: $tab) {
+                max-width: 257px;
+                max-height: 295px;
+            }
+        }
+
+        &__img {
+            max-width: 544px;
+
+            @media (max-width: $tab) {
+                max-width: 257px;
+
+            }
+        }
+    }
+
+    //slider section end
+}

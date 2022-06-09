@@ -53,6 +53,8 @@
         }
     }
     &__text{
+        display: flex;
+        position: relative;
         font-weight: 400;
         font-size: 16px;
         letter-spacing: 0.05em;
@@ -76,4 +78,81 @@
     &__slider-link:first-of-type{
         color: $color-details;
     }
+}
+.posts
+{
+    margin: 0px 0px 128px;
+    @media (max-width: $tab){
+        margin: 0px 0px 64px;
+    }
+    &__container{
+        display: flex;
+        flex-direction: column;
+    }
+    &__categories{
+        display: flex;
+        flex-direction: row;
+        max-width: 544px;
+        gap: 39px;
+        @media (max-width: $tab){
+            flex-direction: column;
+            gap: 29px;
+        }
+    }
+    &__categories-title{
+        position: relative;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0.1em;
+        color: $color-black;
+    }
+    &__menu{
+        display: flex; 
+        flex-direction: column;
+        gap: 10px;
+        justify-content: flex-start;
+        position: relative;
+    }
+    &__menu:hover > .posts__menu-other{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    &__menu-item{
+        display: flex;
+        flex-direction: row;
+        gap: 194px;
+        padding: 0px 0px 21px;
+        max-width: 407px;
+        border-bottom: 2px solid $color-black; 
+        @media (max-width: $tab){
+            max-width: 100%;
+        }
+    }
+    &__menu-text{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0.1em;
+        color: $color-text;
+        max-width: 407px;
+        @media (max-width: $tab){
+            max-width: 100%;
+        }
+    }
+    #down-triangle{
+        float: right;
+        width: 0; 
+        height: 0;
+        margin: 17px 0px 0px 197px;
+        background: url(../img/drop-down.png);
+        width: 17px;
+        height: 10px;
+        @media (max-width: $tab){
+            margin: 0px 0px 0px 365px;
+        }
+    }
+
 }
