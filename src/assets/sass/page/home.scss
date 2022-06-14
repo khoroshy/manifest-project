@@ -20,6 +20,7 @@
         margin: 0px 0px 55px;
         &__container {
             display: flex;
+            justify-content: center;
             gap: 32px;
             overflow: scroll;
             padding: $conteiner-size;
@@ -40,11 +41,6 @@
             @media (max-width: $tab) {
                 max-width: 257px;
                 max-height: 295px;
-            }
-        }
-        &__item:nth-child(2){
-            @media (max-width: $tab) {
-                order: -1;
             }
         }
 
@@ -126,5 +122,67 @@
         @media (max-width: $tab) {
             margin: 0px 0px 48px;
         }
+    }
+}
+.latest
+{
+    margin: 0px 0px 128px;
+
+    @media (max-width: $tab) {
+        margin: 0px 0px 64px;
+
+    }
+    &__container{
+        display: flex;
+        flex-direction: column;
+    }
+    &__title-block{
+        display: flex;
+        flex-direction: row;
+        margin: 0px 0px 40px;
+        @media (max-width: $tab) {
+            flex-direction: column;
+
+        }
+    }
+    &__title{
+        width: 319px;
+        margin: 0px 701px 0px 0px;
+    }
+    &__view-link{
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+    }
+    &__view-all-arrow{
+        max-width: 24px;
+        max-height: 12px;
+    }
+    &__item-block-container{
+        display: flex;
+        gap: 34px;
+
+        @media (max-width: $tab) {
+            flex-direction: column;
+
+        }
+    }
+    &__item-block{
+        display: flex;
+        flex-direction: column;
+        max-width: 350px;
+        gap: 24px;
+    }
+    &__details{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 88px;
+    }
+    &__post-name{
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
