@@ -1,0 +1,95 @@
+.about{
+    margin: 128px 0px;
+
+    @media (max-width: $tab) {
+        margin: 64px 0px;
+    }
+
+    &__container{
+        display: flex;
+        gap: 148px;
+
+        @media (max-width: $tab) {
+            flex-direction: column;
+            gap: 48px;
+        }
+    }
+
+    &__block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 540px;
+
+        @media (max-width: $tab) {
+            max-width: 288px;
+        }
+    }
+
+    &__title{
+        margin: 0px 0px 39px;
+
+        @media (max-width: $tab) {
+            margin: 0px 0px 48px;
+        }
+    }
+
+    &__sub-title{
+        color: $color-text;
+
+        &:last-of-type{
+            margin: 0px 0px 19px;
+
+            @media (max-width: $tab) {
+                margin: 0px 0px 24px;
+            }
+        }
+    }
+
+    &__img{
+        max-width: 225px;
+    }
+
+    &__text{
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+        color: $color-text;
+        margin: 0px 0px 34px;
+
+        &:last-of-type{
+            margin: 0px 0px 67px;
+
+            @media (max-width: $tab) {
+                margin: 0px 0px 48px;
+            }
+        }
+    }
+
+    &__button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 160px;
+        height: 45px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0.1em;
+        background: $color-text;
+        border: 0px solid transparent;
+        color: $color-footer-bg;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &__arrow path{
+        fill: $color-footer-bg;
+    }
+}

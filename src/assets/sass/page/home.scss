@@ -178,11 +178,29 @@
         justify-content: space-between;
         flex-direction: row;
         gap: 88px;
+        @media (max-width: $tab) {
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+    &__details-text{
+        color: $color-details;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
     }
     &__post-name{
 
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+    &__post-description{
+        color: $color-text;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0.05em;
     }
 }
